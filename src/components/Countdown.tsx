@@ -52,18 +52,18 @@ export default function Countdown() {
             disabled
             className={styles.countdownButton}
           >
-            Ciclo encerrado
+            Ciclo encerrado <img src="icons/check.svg" alt="check" />
           </button>
         ) : (
           <>
             { isActive ?
               (
                 <button type="button" className={`${styles.countdownButton} ${styles.countdownButtonActive}`} onClick={resetCountdown}>
-                  Abandonar ciclo
+                  Abandonar ciclo <img src="icons/close.svg" alt="close" />
                 </button>
               ) : (
                 <button type="button" className={styles.countdownButton} onClick={startCountdown}>
-                  Iniciar um ciclo
+                  Iniciar um ciclo <img src="icons/play.svg" alt="play" />
                 </button>
               )
             }
